@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "demo-site",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "3000", "/Users/michaelsheppard/Documents/cylindo-balanced-body-demo"],
+      "port": 3000
+    }
+  ]
+}

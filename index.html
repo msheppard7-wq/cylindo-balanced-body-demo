@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allegro 2 Reformer | Balanced Body - Cylindo Demo</title>
+  <link rel="preconnect" href="https://content.cylindo.com" crossorigin />
+  <script type="module" src="https://viewer-cdn.cylindo.com/v1/index.mjs" async></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <span>Cylindo 3D Product Visualization Demo &mdash; Balanced Body Allegro 2 Reformer</span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <svg viewBox="0 0 200 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+          <text x="0" y="22" font-family="Inter, sans-serif" font-weight="700" font-size="18" fill="#1a1a1a">BALANCED BODY</text>
+        </svg>
+      </a>
+      <nav class="main-nav">
+        <a href="#">Shop</a>
+        <a href="#">Move</a>
+        <a href="#">Learn</a>
+        <a href="#" class="nav-highlight">Reformers</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="#">Home</a>
+      <span class="sep">/</span>
+      <a href="#">Reformers</a>
+      <span class="sep">/</span>
+      <span class="current">Allegro&reg; 2 Reformer</span>
+    </div>
+  </div>
+
+  <!-- Main Product Section -->
+  <main class="product-section">
+    <div class="container product-grid">
+
+      <!-- Left: Cylindo 3D Viewer -->
+      <div class="product-media">
+        <div class="cylindo-wrapper">
+          <cylindo-viewer
+            customer-id="4404"
+            code="ALLEGRO 2 REFORMER"
+          >
+            <img
+              alt="Allegro 2 Reformer - 3D View"
+              slot="placeholder"
+              src="https://content.cylindo.com/api/v2/4404/products/ALLEGRO%202%20REFORMER/frames/default.jpg"
+            />
+          </cylindo-viewer>
+        </div>
+        <div class="viewer-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          <span>Interactive 3D &mdash; Drag to rotate</span>
+        </div>
+      </div>
+
+      <!-- Right: Product Info -->
+      <div class="product-info">
+        <div class="product-badges">
+          <span class="badge badge-bestseller">Best Seller</span>
+          <span class="badge badge-usa">Made in USA</span>
+        </div>
+
+        <h1 class="product-title">Allegro<sup>&reg;</sup> 2 Reformer</h1>
+
+        <p class="product-description">
+          Living at the intersection of form and function, the Allegro 2 Reformer marries the mastery of craft with the precision of engineering &mdash; delivering the smoothest, quietest ride in Pilates.
+        </p>
+
+        <div class="product-price">
+          <span class="price-current">$3,995.00</span>
+          <span class="price-affirm">or as low as $133/mo with Affirm</span>
+        </div>
+
+        <div class="product-rating">
+          <div class="stars">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+          </div>
+          <span class="rating-count">4.9 (128 reviews)</span>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Style Selector -->
+        <div class="option-group">
+          <label class="option-label">Select Style</label>
+          <div class="style-selector">
+            <button class="style-btn active">Standard</button>
+            <button class="style-btn">With Legs</button>
+            <button class="style-btn">Tower Bundle</button>
+          </div>
+        </div>
+
+        <!-- Color Selector -->
+        <div class="option-group">
+          <label class="option-label">Upholstery Color: <span id="selected-color-name">Storm</span></label>
+
+          <div class="color-section">
+            <span class="color-section-label">Stock Color</span>
+            <div class="color-swatches">
+              <button class="color-swatch active" data-color="Storm" style="background-color: #7a8b8c;" title="Storm"></button>
+            </div>
+          </div>
+
+          <div class="color-section">
+            <span class="color-section-label">Custom Colors</span>
+            <div class="color-swatches">
+              <button class="color-swatch" data-color="Admiral" style="background-color: #2c3e6b;" title="Admiral"></button>
+              <button class="color-swatch" data-color="Adobe White" style="background-color: #e8ddd0;" title="Adobe White"></button>
+              <button class="color-swatch" data-color="Black" style="background-color: #1a1a1a;" title="Black"></button>
+              <button class="color-swatch" data-color="Bronze" style="background-color: #8b6e4e;" title="Bronze"></button>
+              <button class="color-swatch" data-color="Burgundy" style="background-color: #6d1a36;" title="Burgundy"></button>
+              <button class="color-swatch" data-color="Cinnabar" style="background-color: #c44536;" title="Cinnabar"></button>
+              <button class="color-swatch" data-color="Claret" style="background-color: #7f1734;" title="Claret"></button>
+              <button class="color-swatch" data-color="Dark Cherry" style="background-color: #4a0e23;" title="Dark Cherry"></button>
+              <button class="color-swatch" data-color="Deep Violet" style="background-color: #4a3060;" title="Deep Violet"></button>
+              <button class="color-swatch" data-color="Doe" style="background-color: #c4a882;" title="Doe"></button>
+              <button class="color-swatch" data-color="Dove" style="background-color: #b5b0a8;" title="Dove"></button>
+              <button class="color-swatch" data-color="Fjord Blue" style="background-color: #4a6d8c;" title="Fjord Blue"></button>
+              <button class="color-swatch" data-color="Forest" style="background-color: #2d4a2e;" title="Forest"></button>
+              <button class="color-swatch" data-color="Graphite" style="background-color: #4a4a4a;" title="Graphite"></button>
+              <button class="color-swatch" data-color="Greystone" style="background-color: #9a9a8e;" title="Greystone"></button>
+              <button class="color-swatch" data-color="Grotto" style="background-color: #3a7a7a;" title="Grotto"></button>
+              <button class="color-swatch" data-color="Mocha" style="background-color: #6b4f3a;" title="Mocha"></button>
+              <button class="color-swatch" data-color="Olive Green" style="background-color: #6b7a2e;" title="Olive Green"></button>
+              <button class="color-swatch" data-color="Parchment" style="background-color: #e8dcc8;" title="Parchment"></button>
+              <button class="color-swatch" data-color="Platinum" style="background-color: #c8c8c8;" title="Platinum"></button>
+              <button class="color-swatch" data-color="Sage" style="background-color: #8a9a6b;" title="Sage"></button>
+              <button class="color-swatch" data-color="Sand" style="background-color: #d2b48c;" title="Sand"></button>
+              <button class="color-swatch" data-color="Taupe" style="background-color: #9e8e7e;" title="Taupe"></button>
+              <button class="color-swatch" data-color="Wedgewood" style="background-color: #5e8ca8;" title="Wedgewood"></button>
+            </div>
+          </div>
+          <a href="#" class="order-swatches">Order Color Samples &rarr;</a>
+        </div>
+
+        <!-- Spring Options -->
+        <div class="option-group">
+          <label class="option-label">Spring Options</label>
+          <div class="spring-selector">
+            <button class="spring-btn active">Signature Springs</button>
+            <button class="spring-btn">Duro Springs</button>
+          </div>
+        </div>
+
+        <!-- Quantity & Add to Cart -->
+        <div class="purchase-row">
+          <div class="quantity-control">
+            <button class="qty-btn" id="qty-minus">−</button>
+            <input type="number" value="1" min="1" max="99" class="qty-input" id="qty-input">
+            <button class="qty-btn" id="qty-plus">+</button>
+          </div>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        <div class="lead-time">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <span>14-day lead time for stock color</span>
+        </div>
+
+        <div class="trust-badges">
+          <div class="trust-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>10 Year Warranty</span>
+          </div>
+          <div class="trust-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <span>Free Shipping</span>
+          </div>
+          <div class="trust-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <span>FSA/HSA Eligible</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Feature Highlights -->
+  <section class="features-section">
+    <div class="container">
+      <h2 class="section-title">Stunning, sophisticated beauty. Premium performance.</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12s1.5-4 4-4 4 4 4 4-1.5 4-4 4-4-4-4-4"/></svg>
+          </div>
+          <h3>Smoothest Ride</h3>
+          <p>No bumps, no squeaks. Our hallmark carriage ride was perfected over the past five decades.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="6"/></svg>
+          </div>
+          <h3>Consistent Resistance</h3>
+          <p>Our patented springs are time-tested for strength, consistency, and durability.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Customizable</h3>
+          <p>30 colors and an array of accessories. Design your perfect Reformer.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5"><path d="M3 21h18M3 10h18M3 10V3h18v7M5 21v-7h4v7M10 21v-4h4v4M15 21v-6h4v6"/></svg>
+          </div>
+          <h3>Made in USA</h3>
+          <p>Proudly built by talented craftspeople at our Sacramento, California headquarters.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>10 Year Warranty</h3>
+          <p>Good on the body and mind, knowing your Allegro 2 Reformer is guaranteed for a decade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specifications -->
+  <section class="specs-section">
+    <div class="container">
+      <h2 class="section-title">Specifications</h2>
+      <div class="specs-grid">
+        <div class="spec-group">
+          <h3>Dimensions</h3>
+          <table class="spec-table">
+            <tr><td>Length</td><td>94" (239 cm)</td></tr>
+            <tr><td>Width (with footbar)</td><td>31.25" (79 cm)</td></tr>
+            <tr><td>Height (standard)</td><td>8.5"</td></tr>
+            <tr><td>Height (with legs)</td><td>15" (38 cm)</td></tr>
+            <tr><td>Carriage</td><td>39.25" L x 23.75" W</td></tr>
+          </table>
+        </div>
+        <div class="spec-group">
+          <h3>Details</h3>
+          <table class="spec-table">
+            <tr><td>Weight (without legs)</td><td>148 lbs (67.13 kg)</td></tr>
+            <tr><td>Weight (with legs)</td><td>155 lbs (70.30 kg)</td></tr>
+            <tr><td>Frame</td><td>Powder-coated aluminum</td></tr>
+            <tr><td>Springs included</td><td>3 Red, 1 Blue, 1 Yellow</td></tr>
+            <tr><td>Footbar positions</td><td>4 vertical, 9 horizontal</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accessories Carousel -->
+  <section class="accessories-section">
+    <div class="container">
+      <h2 class="section-title">Expand Your Reformer</h2>
+      <p class="section-subtitle">Unlock your Reformer's potential with innovative accessories.</p>
+      <div class="accessories-scroll">
+        <div class="accessory-card">
+          <div class="accessory-img" style="background: #f5f5f0;"></div>
+          <h4>Extended Head End Platform</h4>
+          <p class="accessory-price">$195.00</p>
+        </div>
+        <div class="accessory-card">
+          <div class="accessory-img" style="background: #f5f5f0;"></div>
+          <h4>Platform Extender</h4>
+          <p class="accessory-price">$145.00</p>
+        </div>
+        <div class="accessory-card">
+          <div class="accessory-img" style="background: #f5f5f0;"></div>
+          <h4>Leg and Post Kit</h4>
+          <p class="accessory-price">$395.00</p>
+        </div>
+        <div class="accessory-card">
+          <div class="accessory-img" style="background: #f5f5f0;"></div>
+          <h4>Contour Sitting Box</h4>
+          <p class="accessory-price">$175.00</p>
+        </div>
+        <div class="accessory-card">
+          <div class="accessory-img" style="background: #f5f5f0;"></div>
+          <h4>Padded Jumpboard</h4>
+          <p class="accessory-price">$295.00</p>
+        </div>
+        <div class="accessory-card">
+          <div class="accessory-img" style="background: #f5f5f0;"></div>
+          <h4>Plank Bars</h4>
+          <p class="accessory-price">$195.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Does the Allegro 2 Reformer come fully assembled?</summary>
+          <p>No, the Allegro 2 Reformer comes partially assembled. Assembly includes attaching the footbar, springs, ropes, and risers. Most customers complete assembly in about 30 minutes.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is the Allegro 2 suitable for home or studio use?</summary>
+          <p>The Allegro 2 Reformer is designed to perform well in both home and studio settings thanks to a durable build and smooth, quiet operation.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Does the Allegro 2 Reformer come with springs?</summary>
+          <p>Yes! The Allegro 2 Reformer includes 5 Balanced Body Signature Springs: 3 Red for medium resistance, 1 Blue for heavy resistance, and 1 Yellow for light resistance.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can you increase the height of the Allegro 2 Reformer?</summary>
+          <p>Yes, the Leg and Post Kit can be added at any time to convert the standard 8.5" height to a 15" studio height.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can the Allegro 2 be stored vertically?</summary>
+          <p>Yes, the Allegro 2 Reformer can be stored vertically with the footbar properly positioned and secured with the optional Wheel Kit and Wall Security Strap.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Does the Allegro 2 come with a warranty?</summary>
+          <p>Yes! The Allegro 2 Reformer has a 10-year warranty from date of invoice.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cylindo Powered Banner -->
+  <section class="cylindo-banner">
+    <div class="container">
+      <div class="cylindo-badge-large">
+        <span class="powered-by">3D Product Visualization Powered by</span>
+        <span class="cylindo-brand">Cylindo</span>
+      </div>
+      <p>This demo showcases how Cylindo's interactive 3D viewer integrates seamlessly into a branded product page, replacing static photography with an engaging 360&deg; experience.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#">My Account</a>
+        <a href="#">Assembly &amp; Maintenance</a>
+        <a href="#">Shipping &amp; Returns</a>
+        <a href="#">Warranty</a>
+      </div>
+      <div class="footer-col">
+        <h4>Experience</h4>
+        <a href="#">Events</a>
+        <a href="#">Video Library</a>
+        <a href="#">Studio Finder</a>
+        <a href="#">Reformer Guide</a>
+      </div>
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <a href="#">Our Company</a>
+        <a href="#">Community</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Stay Connected</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Balanced Body &mdash; Cylindo Demo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
