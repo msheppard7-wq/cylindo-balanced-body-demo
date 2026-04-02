@@ -184,8 +184,8 @@ body {
 }
 
 .cylindo-wrapper {
-  background: var(--color-bg-warm);
-  border-radius: 12px;
+  background: var(--color-bg);
+  border-radius: 0;
   overflow: hidden;
   aspect-ratio: 4 / 3;
 }
