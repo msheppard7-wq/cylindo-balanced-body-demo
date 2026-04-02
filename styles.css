@@ -172,8 +172,9 @@ body {
 
 .product-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  /* Give the viewer more real estate on desktop. */
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 48px;
   align-items: start;
 }
 
